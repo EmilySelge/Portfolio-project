@@ -22,7 +22,7 @@
             </div>
         
             <div class="flex flex-col md:flex-row md:space-x-12 md:mt-16 space-y-16 md:space-y-0">
-                <img src="../assets/360shots_so.png" class=" shadow-lg md:w-1/2 md:h-1/2 mt-4 rounded-xl" alt="">
+                <img src="../assets/360shots_so.webp" class=" shadow-lg md:w-1/2 md:h-1/2 mt-4 rounded-xl" alt="">
                 <div class=" flex flex-col space-y-8">
                     <div class="">
                         <div class="bg-fuchsia-100 w-fit p-2 rounded-lg">
@@ -98,7 +98,7 @@
                         <p class="text-gray-800 mt-2 text-sm md:text-base">Once your site is ready, I handle the launch process to ensure everything goes live smoothly. I also offer ongoing maintenance and updates to keep your website running efficiently and securely over time.</p>
                     </div>
                 </div>
-                <img src="../assets/80shots_so.png" class="shadow-lg md:w-1/2 md:h-1/2 mt-4 rounded-xl" alt="">
+                <img src="../assets/80shots_so.webp" class="shadow-lg md:w-1/2 md:h-1/2 mt-4 rounded-xl" alt="">
             </div>
         </div>
     </section>

@@ -1,5 +1,5 @@
 <template>
-  <section class="text-center bg-bottom bg-no-repeat bg-cover" style="background-image: url('/assets/backgroundgradient.jpeg'); font-family: 'Satoshi', sans-serif;">
+  <section class="text-center bg-bottom bg-no-repeat bg-cover" style="background-image: url('src/assets/backgroundgradient.webp'); font-family: 'Satoshi', sans-serif;">
     <div class="flex flex-col w-dvw p-8 lg:p-0 h-dvh bg-opacity-50 backdrop-blur-md bg-white">
       <div class=" mt-32 lg:mt-48">
         <h1 class="md:text-8xl text-5xl leading-0 stardom italic text-center tracking-tight">
