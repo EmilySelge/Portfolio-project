@@ -15,7 +15,7 @@
             When I’m not busy designing or coding, you can usually find me exploring new tech trends, experimenting with design tools, or spending time with my dog, Smokey. 
         </p>
         <div class="pt-6 flex space-x-8 items-center">
-            <a href="/public/cv Emily Selge.pdf"  download>
+            <a href="/public/cv_Emily_Selge.pdf"  download>
                 <button class=" underline underline-offset-4">Download CV</button>
             </a>
             <RouterLink to="/contact" class=" inline-block bg-white border border-black px-6 py-2 rounded-full hover:scale-105 transition-transform duration-300 text-sm">Let's Collaborate!</RouterLink>
