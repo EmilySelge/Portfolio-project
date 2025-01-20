@@ -13,6 +13,7 @@
                     <li><RouterLink to="/">Home</RouterLink></li>
                     <li><RouterLink to="/services">Services</RouterLink></li>
                     <li><RouterLink to="/about">About</RouterLink></li>
+                    <li><RouterLink to="/projects" class="">Projects</RouterLink></li>
                     <li><RouterLink to="/contact" class=" text-black rounded-full inline">Contact</RouterLink></li>
                 </ul>
             </div>
