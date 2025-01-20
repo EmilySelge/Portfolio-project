@@ -6,6 +6,7 @@ import Contact from './components/Contact.vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Services from './components/Services.vue'
+import Projects from './components/Projects.vue'
 import emailjs from '@emailjs/browser';
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 emailjs.init("soSYuH38UNIoq-eqZ");
@@ -16,7 +17,8 @@ const router = createRouter({
         { path: '/', component: Home },
         { path: '/about', component: About },
         { path: '/services', component: Services },
-        { path: '/contact', component: Contact }
+        { path: '/contact', component: Contact },
+        { path: '/projects', component: Projects }
     ]
 });
 
