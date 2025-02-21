@@ -1,15 +1,35 @@
 <template>
     <nav class="p-4 px-8 uppercase space-x-6 mt-2 hidden lg:block text-pink-950 rounded-md absolute top-0 left-0 w-full z-10 bg-transparent bg text-right text-sm font-medium ">
-      <RouterLink to="/" class="" >emily s.</RouterLink>
-      <RouterLink to="/services" class="">services</RouterLink>
-      <RouterLink to="/about" class="">about</RouterLink>
-      <RouterLink to="/projects" class="">projects</RouterLink>
-      <RouterLink to="/contact" class=" text-black rounded-full inline">let's talk 
+      
+      <span class="relative group">
+        <RouterLink to="/" class="" >emily s.</RouterLink>
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+      </span>
+      <span class="relative group">
+        <RouterLink to="/services" class="">services</RouterLink>
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+      </span>
+      <span class="relative group">
+        <RouterLink to="/about" class="">about</RouterLink>
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+      </span>
+      <span class="relative group">
+        <RouterLink to="/projects" class="">projects</RouterLink>
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+      </span>
+      <span class="relative group">
+        <RouterLink to="/contact" class=" text-black rounded-full inline">let's talk 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 inline align-text-top">
             <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
         </svg>
 
       </RouterLink>
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+      </span>
+    
+      
+      
+      
     </nav>
 
     <nav class="lg:hidden flex flex-col items-end py-4  px-4">

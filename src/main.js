@@ -10,6 +10,9 @@ import Projects from './components/Projects.vue'
 import emailjs from '@emailjs/browser';
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 emailjs.init("soSYuH38UNIoq-eqZ");
+import { Observer } from 'tailwindcss-intersect';
+ 
+Observer.start();
 
 const router = createRouter({
     history: createWebHistory(),
@@ -21,6 +24,7 @@ const router = createRouter({
         { path: '/projects', component: Projects }
     ]
 });
+
 
 
 createApp(App)

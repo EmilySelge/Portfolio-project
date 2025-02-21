@@ -1,6 +1,9 @@
 <script setup>
   import Footer from './components/Footer.vue';
   import Navbar from './components/navbar.vue'
+  import { Observer } from "tailwindcss-intersect";
+
+  Observer.start(); // Make sure Rombo animations work
 
 </script>
 

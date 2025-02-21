@@ -2,9 +2,9 @@
   <section class="text-center bg-bottom bg-no-repeat bg-cover" style="background-image: url('/backgroundgradient.webp'); font-family: 'Satoshi', sans-serif;">
     <div class="flex flex-col w-dvw p-8 lg:p-0 h-dvh bg-opacity-50 backdrop-blur-md bg-white">
       <div class=" mt-32 lg:mt-48">
-        <h1 class="md:text-8xl text-5xl leading-0 stardom italic text-center tracking-tight">
+        <h1 class="md:text-8xl text-5xl leading-0 stardom italic text-center tracking-tight intersect:motion-preset-pop ">
           Web <span class="">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-pink-600">Designer</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-pink-600 ">Designer</span>
           </span> & <br class="hidden lg:inline">
           <span class="">
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-pink-600">Developer</span>
@@ -32,8 +32,8 @@
             <i class="devicon-figma-plain lg:text-6xl text-4xl text-black"></i>
         </div>
         <div class="flex space-y-8 flex-col lg:flex-row lg:space-y-0 items-center lg:py-12 lg:space-x-12">
-            <div class=" rounded-md space-y-2  bg-opacity-10 border shadow-[5px_5px_rgba(200,_162,_200,_0.4),_10px_10px_rgba(200,_162,_200,_0.3),_15px_15px_rgba(200,_162,_200,_0.2),_20px_20px_rgba(200,_162,_200,_0.1),_25px_25px_rgba(200,_162,_200,_0.05)] border-violet-700 p-6">
-                <h3 class="text-violet-700-700">01</h3>
+            <div data-aos="fade-up" class=" rounded-md space-y-2  bg-opacity-10 border shadow-[5px_5px_rgba(200,_162,_200,_0.4),_10px_10px_rgba(200,_162,_200,_0.3),_15px_15px_rgba(200,_162,_200,_0.2),_20px_20px_rgba(200,_162,_200,_0.1),_25px_25px_rgba(200,_162,_200,_0.05)] border-violet-700 p-6">
+                <h3 class="text-violet-700">01</h3>
                 <h2 class="text-lg uppercase">Design</h2>
                 <p class="text-sm">Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.</p>
                 <span class="flex items-end space-x-1 hover:underline underline-offset-4 duration-300">
@@ -44,7 +44,7 @@
                 </span>
        
             </div>
-            <div class=" rounded-md shadow-[5px_5px_rgba(200,_162,_200,_0.4),_10px_10px_rgba(200,_162,_200,_0.3),_15px_15px_rgba(200,_162,_200,_0.2),_20px_20px_rgba(200,_162,_200,_0.1),_25px_25px_rgba(200,_162,_200,_0.05)] space-y-2 bg-opacity-5 border border-violet-900 p-6">
+            <div data-aos="fade-up" data-aos-delay="100" class=" rounded-md motion-delay-100 shadow-[5px_5px_rgba(200,_162,_200,_0.4),_10px_10px_rgba(200,_162,_200,_0.3),_15px_15px_rgba(200,_162,_200,_0.2),_20px_20px_rgba(200,_162,_200,_0.1),_25px_25px_rgba(200,_162,_200,_0.05)] space-y-2 bg-opacity-5 border border-violet-900 p-6">
                 <h3 class="text-violet-700">02</h3>
                 <h2 class="text-lg uppercase">Development</h2>
                 <p class="text-sm">Get custom web development solutions that are tailored to your specifications, designed to deliver a flawless user experience.</p>
@@ -57,7 +57,7 @@
                 </span>
        
             </div>
-            <div class=" rounded-md space-y-2 bg-opacity-10 shadow-[5px_5px_rgba(200,_162,_200,_0.4),_10px_10px_rgba(200,_162,_200,_0.3),_15px_15px_rgba(200,_162,_200,_0.2),_20px_20px_rgba(200,_162,_200,_0.1),_25px_25px_rgba(200,_162,_200,_0.05)] border border-black p-6">
+            <div data-aos="fade-up" data-aos-delay="200" class="  rounded-md space-y-2 motion-delay-200 bg-opacity-10 shadow-[5px_5px_rgba(200,_162,_200,_0.4),_10px_10px_rgba(200,_162,_200,_0.3),_15px_15px_rgba(200,_162,_200,_0.2),_20px_20px_rgba(200,_162,_200,_0.1),_25px_25px_rgba(200,_162,_200,_0.05)] border border-black p-6">
                 <h3 class="text-violet-700">03</h3>
                 <h2 class="text-lg uppercase">Content & SEO</h2>
                 <p class="text-sm">Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search results.</p>
@@ -100,7 +100,7 @@
             <h1 class="">1</h1>
         </div>
         <!-- Card -->
-        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]  bg-fuchsia-300 bg-opacity-10 p-8 rounded border border-black shadow-md shadow-violet-300">
+        <div data-aos="fade-up-left" class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]  bg-fuchsia-300 bg-opacity-10 p-8 rounded border border-black shadow-md shadow-violet-300">
             <div class="uppercase flex  text-xs rounded-md text-right items-end justify-between ">
               <h3 class="uppercase text-xs">Do we match?</h3>
               <p class="bg-white p-2 border border-violet-200 rounded-sm">2 Hours</p>
@@ -121,7 +121,7 @@
                 <h1 class="">2</h1>
             </div>
             <!-- Card -->
-            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-fuchsia-300 bg-opacity-10 p-8 text-sm rounded border space-y-2  border-black shadow-md shadow-violet-300">
+            <div data-aos="fade-up-right" class="w-[calc(100%-4rem)]motion-scale-in-[0.5] motion-translate-x-in-[-61%] motion-translate-y-in-[57%] motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.35s] motion-duration-[0.53s]/scale motion-duration-[0.53s]/translate motion-duration-[0.63s]/rotate      md:w-[calc(50%-2.5rem)] bg-fuchsia-300 bg-opacity-10 p-8 text-sm rounded border space-y-2  border-black shadow-md shadow-violet-300">
                 <div class="uppercase flex  text-xs rounded-md text-right items-end justify-between ">
                   <h3 class="uppercase text-xs">Do we match?</h3>
                   <p class="bg-white p-2 border border-violet-200 rounded-sm">1 week</p>
@@ -142,7 +142,7 @@
                 <h1 class="">3</h1>
             </div>
             <!-- Card -->
-            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-fuchsia-300 bg-opacity-10 p-8 rounded border space-y-2  border-black shadow-md shadow-violet-300">
+            <div data-aos="fade-up-left" class="w-[calc(100%-4rem)]  md:w-[calc(50%-2.5rem)] bg-fuchsia-300 bg-opacity-10 p-8 rounded border space-y-2  border-black shadow-md shadow-violet-300">
                 <div class="uppercase flex  text-xs rounded-md text-right items-end justify-between ">
                   <h3 class="uppercase text-xs">some magic</h3>
                   <p class="bg-white p-2 border border-violet-200 rounded-sm">1 week</p>
@@ -162,7 +162,7 @@
                 <h1 class="">4</h1>
             </div>
             <!-- Card -->
-            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-fuchsia-300 bg-opacity-10 p-8 rounded border space-y-2  border-black shadow-md shadow-violet-300">
+            <div data-aos="fade-up-right" class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-fuchsia-300 bg-opacity-10 p-8 rounded border space-y-2  border-black shadow-md shadow-violet-300">
                 <div class="uppercase flex  text-xs rounded-md text-right items-end justify-between">
                   <h3 class="uppercase text-xs">more magic</h3>
                   <p class="bg-white p-2 border border-violet-200 rounded-sm">2 weeks</p>
@@ -183,7 +183,7 @@
                 <h1 class="">5</h1>
             </div>
             <!-- Card -->
-            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-fuchsia-300 bg-opacity-10 p-8 rounded border space-y-2  border-black shadow-md shadow-violet-300">
+            <div data-aos="fade-up-left" class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-fuchsia-300 bg-opacity-10 p-8 rounded border space-y-2  border-black shadow-md shadow-violet-300">
                 <div class="uppercase flex  text-xs rounded-md text-right items-end justify-between ">
                   <h3 class="uppercase text-xs">Ready to go</h3>
                   <p class="bg-white p-2 border border-violet-200 rounded-sm">2 Hours</p>
@@ -204,7 +204,7 @@
     <p class="mt-8 text-center">See what my clients have to say about working with me<br class="hidden lg:inline"> and the results I helped them achieve.</p>
     <div class="flex flex-col lg:flex-row space-y-12 lg:space-y-0  lg:space-x-20 mt-12 lg:mt-24">
       
-      <div class="bg-white p-8 border  border-green-950 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
+      <div data-aos="zoom-in" class="bg-white p-8 border   border-green-950 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
         <h2 class="">A Dedicated and Reliable Team Player</h2>
         <p class="text-sm mt-4  text-gray-900">"Emily is a talented and dependable colleague, always bringing creativity and attention to detail to every project. She collaborates seamlessly with the team, consistently delivering high-quality work on time. A true asset to any team!"</p>
         <div class="mt-6 flex space-x-4 items-center">
@@ -214,7 +214,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-white p-8 border border-green-950 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
+      <div data-aos="zoom-in" data-aos-delay="100" class="bg-white p-8 border border-green-950 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
         <h2 class="">A Creative and Collaborative Professional</h2>
         <p class="text-sm mt-4  text-gray-900">"Emily is an exceptional team player who combines creativity with a strong work ethic. She is always eager to help, offering valuable insights and solutions while maintaining a positive attitude. Her attention to detail and reliability make her a standout colleague</p>
         <div class="mt-6 flex space-x-4 items-center">
@@ -238,5 +238,6 @@
 
 
 <script>
+
 
 </script>
