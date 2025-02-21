@@ -1,7 +1,7 @@
 <template>
     
 
-    <section class="flex space-y-12 flex-col lg:flex-row  md:items-start lg:items-center justify-between px-12 md:px-24 py-16 md:py-32 ">
+    <section class="flex space-y-12 flex-col lg:flex-row  md:items-start lg:items-center justify-between px-12 md:px-24 py-16 md:py-32 bg-gradient-to-r from-white to-pink-100">
     <div class="lg:w-2/3 space-y-6">
         <h1 class="text-4xl md:text-6xl stardom mb-4 italic w-full ">
             Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-600 ">Emily!</span></h1>
