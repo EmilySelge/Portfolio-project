@@ -22,33 +22,19 @@
         </div>
     </div>
     
-    <div class="lg:w-1/2 flex flex-col items-center justify-center mt-24">
-    <!-- Card 1 -->
-    <div class="flex justify-center -space-x-24">
-        <div class="animate-float">
-            <div class="bg-gradient-to-r from-pink-400 to-pink-500 bg-animate w-[9.15rem] h-2 skew-x-[60deg] translate-y-[0.10rem] translate-x-[0.20rem] -rotate-12 z-40"></div>
-            <div class="bg-gradient-to-r from-pink-300 to-pink-500 bg-animate w-36 h-36 -skew-y-12 border border-pink-400 -z-10 translate-x-3 flex flex-col items-center">
-            </div>
-            <div class="bg-gradient-to-r from-pink-500 to-pink-700 bg-animate w-3 h-[9rem] -translate-y-[8.125rem] skew-y-[16deg] z-10"></div>
-        </div>
-   
-
-    <!-- Card 2 -->
-    <div class="mt-4 animate-float animation-delay-200">
-        <div class="bg-gradient-to-r from-pink-400 to-pink-500 bg-animate w-[9.15rem] h-2 skew-x-[60deg] translate-y-[0.10rem] translate-x-[0.20rem] -rotate-12 z-40"></div>
-        <div class="bg-gradient-to-r from-pink-300 to-pink-500 bg-animate w-36 h-36 -skew-y-12 border border-pink-400 -z-10 translate-x-3 flex flex-col items-center">
-        </div>
-        <div class="bg-gradient-to-r from-pink-500 to-pink-700 bg-animate w-3 h-[9rem] -translate-y-[8.125rem] skew-y-[16deg] z-10"></div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="mt-8 animate-float animation-delay-400">
-        <div class="bg-gradient-to-r from-pink-400 to-pink-500 bg-animate w-[9.15rem] h-2 skew-x-[60deg] translate-y-[0.10rem] translate-x-[0.20rem] -rotate-12 z-40"></div>
-        <div class="bg-gradient-to-r from-pink-300 to-pink-500 bg-animate w-36 h-36 -skew-y-12 border border-pink-400 -z-10 translate-x-3 flex flex-col items-center">
-        </div>
-        <div class="bg-gradient-to-r from-pink-500 to-pink-700 bg-animate w-3 h-[9rem] -translate-y-[8.125rem] skew-y-[16deg] z-10"></div>
-    </div>
-</div>
+   <div class="lg:w-1/2 flex flex-col items-center justify-center mt-24 relative h-[500px]">
+    <section class="stars-container">
+        <div class="five-pointed-star"></div>
+        <div class="five-pointed-star"></div>
+        <div class="five-pointed-star"></div>
+        <div class="five-pointed-star"></div>
+        <div class="five-pointed-star"></div>
+        <div class="five-pointed-star"></div>
+        <div class="five-pointed-star"></div>
+        <div class="five-pointed-star"></div>
+        <div class="five-pointed-star"></div>
+        <div class="five-pointed-star"></div>
+    </section>
 </div>
 
 
@@ -59,43 +45,74 @@
 </template>
 
 <style>
-    @keyframes float {
-        0%, 100% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-20px);
-        }
-    }
+  
 
-    .animate-float {
-        animation: float 3s ease-in-out infinite;
-    }
-
-    .animation-delay-200 {
-        animation-delay: 0.2s;
-    }
-
-    .animation-delay-400 {
-        animation-delay: 0.4s;
-    }
-
-    @keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
+  .five-pointed-star {
+    --star-color: rgb(255, 0, 102);
+    position: absolute;
+    top: -50px;
+    left: calc(10% + 80% * var(--random-pos));
+    font-size: 1em;
+    width: 0;
+    height: 0;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(35deg);
+    animation: fall-flip linear infinite;
+    animation-duration: calc(3s + 2s * var(--random-speed));
+    animation-delay: calc(1s * var(--random-delay));
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
-.bg-animate {
-  background-size: 400% 400%;
-  animation: gradientAnimation 5s ease infinite;
-}
+  .five-pointed-star:before {
+    content: "";
+    position: absolute;
+    border-bottom: 0.8em solid var(--star-color);
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    top: -0.45em;
+    left: -0.65em;
+    transform: rotate(-35deg);
+  }
+
+  .five-pointed-star:after {
+    content: "";
+    position: absolute;
+    top: 0.03em;
+    left: -1.05em;
+    width: 0;
+    height: 0;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(-70deg);
+  }
+
+  @keyframes fall-flip {
+    0% {
+      transform: translateY(0) rotate(0deg) rotateY(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(50vh) rotate(180deg) rotateY(180deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg) rotateY(360deg);
+      opacity: 0;
+    }
+  }
+
+  /* Randomizing each star's position, speed, and delay */
+  .five-pointed-star:nth-child(1) { --random-pos: 0.1; --random-speed: 0.2; --random-delay: 0; }
+  .five-pointed-star:nth-child(2) { --random-pos: 0.3; --random-speed: 0.5; --random-delay: 1; }
+  .five-pointed-star:nth-child(3) { --random-pos: 0.5; --random-speed: 0.7; --random-delay: 2; }
+  .five-pointed-star:nth-child(4) { --random-pos: 0.7; --random-speed: 1.0; --random-delay: 1.5; }
+  .five-pointed-star:nth-child(5) { --random-pos: 0.9; --random-speed: 1.2; --random-delay: 0.5; }
+  .five-pointed-star:nth-child(6) { --random-pos: 1.1; --random-speed: 0.2; --random-delay: 0; }
+  .five-pointed-star:nth-child(7) { --random-pos: 1.3; --random-speed: 0.5; --random-delay: 1; }
+  .five-pointed-star:nth-child(8) { --random-pos: 1.5; --random-speed: 0.7; --random-delay: 2; }
+  .five-pointed-star:nth-child(9) { --random-pos: 1.7; --random-speed: 1.0; --random-delay: 1.5; }
+  .five-pointed-star:nth-child(10) { --random-pos: 1.9; --random-speed: 1.2; --random-delay: 0.5; }
 </style>
 
 <script>
