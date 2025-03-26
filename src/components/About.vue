@@ -45,10 +45,9 @@
 </template>
 
 <style>
-  
-
-  .five-pointed-star {
+.five-pointed-star {
     --star-color: rgb(255, 0, 102);
+    --darker-star-color: rgb(204, 0, 82);
     position: absolute;
     top: -50px;
     left: calc(10% + 80% * var(--random-pos));
@@ -59,23 +58,25 @@
     border-bottom: 0.7em solid var(--star-color);
     border-left: 1em solid transparent;
     transform: rotate(35deg);
-    animation: fall-flip linear infinite;
-    animation-duration: calc(3s + 2s * var(--random-speed));
+    animation: fall-flip ease-in infinite;
+    animation-duration: calc(5s + 5s * var(--random-speed));
     animation-delay: calc(1s * var(--random-delay));
-  }
+    filter: drop-shadow(0 0 2px rgba(255, 0, 102, 0.7));
+    will-change: transform, opacity;
+}
 
-  .five-pointed-star:before {
+.five-pointed-star:before {
     content: "";
     position: absolute;
-    border-bottom: 0.8em solid var(--star-color);
+    border-bottom: 0.8em solid var(--darker-star-color);
     border-left: 0.3em solid transparent;
     border-right: 0.3em solid transparent;
     top: -0.45em;
     left: -0.65em;
     transform: rotate(-35deg);
-  }
+}
 
-  .five-pointed-star:after {
+.five-pointed-star:after {
     content: "";
     position: absolute;
     top: 0.03em;
@@ -83,36 +84,41 @@
     width: 0;
     height: 0;
     border-right: 1em solid transparent;
-    border-bottom: 0.7em solid var(--star-color);
+    border-bottom: 0.7em solid var(--darker-star-color);
     border-left: 1em solid transparent;
     transform: rotate(-70deg);
-  }
+}
 
-  @keyframes fall-flip {
+@keyframes fall-flip {
     0% {
-      transform: translateY(0) rotate(0deg) rotateY(0deg);
-      opacity: 1;
+        transform: translateY(0) rotate(0deg) rotateX(0deg) scale(0.8);
+        opacity: 0;
     }
-    50% {
-      transform: translateY(50vh) rotate(180deg) rotateY(180deg);
+    10% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.9;
     }
     100% {
-      transform: translateY(100vh) rotate(360deg) rotateY(360deg);
-      opacity: 0;
+        transform: translateY(100vh) rotate(360deg) rotateX(180deg) scale(0.4);
+        opacity: 0;
     }
-  }
+}
 
-  /* Randomizing each star's position, speed, and delay */
-  .five-pointed-star:nth-child(1) { --random-pos: 0.1; --random-speed: 0.2; --random-delay: 0; }
-  .five-pointed-star:nth-child(2) { --random-pos: 0.3; --random-speed: 0.5; --random-delay: 1; }
-  .five-pointed-star:nth-child(3) { --random-pos: 0.5; --random-speed: 0.7; --random-delay: 2; }
-  .five-pointed-star:nth-child(4) { --random-pos: 0.7; --random-speed: 1.0; --random-delay: 1.5; }
-  .five-pointed-star:nth-child(5) { --random-pos: 0.9; --random-speed: 1.2; --random-delay: 0.5; }
-  .five-pointed-star:nth-child(6) { --random-pos: 1.1; --random-speed: 0.2; --random-delay: 0; }
-  .five-pointed-star:nth-child(7) { --random-pos: 1.3; --random-speed: 0.5; --random-delay: 1; }
-  .five-pointed-star:nth-child(8) { --random-pos: 1.5; --random-speed: 0.7; --random-delay: 2; }
-  .five-pointed-star:nth-child(9) { --random-pos: 1.7; --random-speed: 1.0; --random-delay: 1.5; }
-  .five-pointed-star:nth-child(10) { --random-pos: 1.9; --random-speed: 1.2; --random-delay: 0.5; }
+/* More varied timing and positions */
+.five-pointed-star:nth-child(1) { --random-pos: 0.1; --random-speed: 0.1; --random-delay: 0; }
+.five-pointed-star:nth-child(2) { --random-pos: 0.25; --random-speed: 0.3; --random-delay: 0.8; }
+.five-pointed-star:nth-child(3) { --random-pos: 0.4; --random-speed: 0.5; --random-delay: 1.6; }
+.five-pointed-star:nth-child(4) { --random-pos: 0.55; --random-speed: 0.2; --random-delay: 2.4; }
+.five-pointed-star:nth-child(5) { --random-pos: 0.7; --random-speed: 0.4; --random-delay: 3.2; }
+.five-pointed-star:nth-child(6) { --random-pos: 0.85; --random-speed: 0.6; --random-delay: 4.0; }
+.five-pointed-star:nth-child(7) { --random-pos: 0.15; --random-speed: 0.7; --random-delay: 0.4; }
+.five-pointed-star:nth-child(8) { --random-pos: 0.3; --random-speed: 0.9; --random-delay: 1.2; }
+.five-pointed-star:nth-child(9) { --random-pos: 0.45; --random-speed: 0.8; --random-delay: 2.0; }
+.five-pointed-star:nth-child(10) { --random-pos: 0.6; --random-speed: 0.35; --random-delay: 2.8; }
+.five-pointed-star:nth-child(11) { --random-pos: 0.75; --random-speed: 0.55; --random-delay: 3.6; }
+.five-pointed-star:nth-child(12) { --random-pos: 0.9; --random-speed: 0.65; --random-delay: 4.4; }
 </style>
 
 <script>
