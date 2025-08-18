@@ -96,8 +96,8 @@
         <div>
             <div class="bg-gradient-to-br from-purple-200 to-pink-300  shadow-purple-200 rounded-xl p-1 hover:scale-105 transition-transform">
                 <div class="bg-white  h-full p-8 rounded-lg">
-                    <h2 class="text-lg font-semibold text-gray-800 stardom">Band Website</h2>
-                    <p class="text-md text-gray-600 mt-4">A stylish website for a music band, featuring event schedules, galleries, and music streaming options.</p>
+                    <h2 class="text-lg font-semibold text-gray-800 stardom">Maprav</h2>
+                    <p class="text-md text-gray-600 mt-4">A website for a diamond drilling company with a cms.</p>
                     <div class="w-1/6 border-t-2 border-purple-300 mt-4">
                         
                     </div>
@@ -127,7 +127,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="https://github.com/KatlinEpelbaum/dugilan" class="inline-block mt-8 text-purple-600 font-medium hover:underline">View on GitHub</a>
+                    <a href="https://maprav.ee/" class="inline-block mt-8 text-purple-600 font-medium hover:underline">See live</a>
                 </div>
             </div>
 
