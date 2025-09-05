@@ -3,7 +3,7 @@
         <div class="bg-cover bg-bottom flex lg:flex-row min-h-dvh flex-col rounded-xl bg-gradient-to-t from-[#fff0e3] via-[#f0e3ff]  ">
             <div class="lg:w-2/3 py-12 md:py-24 px-8 md:px-12 bg-fuchsia-50 bg-opacity-10 backdrop-blur-md">
                     <h1 class="text-5xl mb-8 italic" style="font-family:'Stardom', serif;">Let's get in touch</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, alias itaque error earum doloribus perferendis veniam adipisci! Reprehenderit deleniti eos voluptatem recusandae, iusto sed quia fuga voluptatum beatae quas suscipit.</p>
+                    <p>I'm always excited to connect with new people and explore creative opportunities. Whether you have a project in mind, want to collaborate, or just want to say hello, I'd love to hear from you.</p>
                     <ul class="mt-10 space-y-6 space-x-0">
                         <li class="flex items-center space-x-2 w-fit">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30" class="size-10 bg-white p-1 rounded-full">
