@@ -108,14 +108,14 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-emerald-50 rounded-lg">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                                 </svg>
-                                <p class="  text-pretty text-sm">Creating visually engaging UI/UX designs.</p>
+                                <p class="  text-pretty text-sm">Creating a website with a custom CMS using Vue for the front end and Node.js for the back end</p>
 
                             </li>
                             <li class="flex space-x-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-emerald-50 rounded-lg">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                                 </svg>
-                                <p class="  text-pretty text-sm">improving responsive design techniques for various devices.</p>
+                                <p class="  text-pretty text-sm">Gained practical experience building a full-stack web application and understanding the development workflow from design to deployment</p>
 
                             </li>
                             <li class="flex space-x-2">
